@@ -32,7 +32,7 @@ export default ({ data, pageContext, location }) => {
   return (
     <Layout location={location} title={title}>
       <Head title={post.frontmatter.title} description={post.excerpt} />
-      <PostTitle title={post.frontmatter.title} />
+      <PostTitle title={post.frontmatter.title} subtitle={post.frontmatter.subtitle} />
       <PostContainer html={post.html} />
       <SocialShare title={post.frontmatter.title} author={author} />
       {!!sponsor.buyMeACoffeeId && (
@@ -76,6 +76,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        subtitle
         date(formatString: "MMMM DD, YYYY")
       }
     }

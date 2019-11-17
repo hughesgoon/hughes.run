@@ -47,6 +47,11 @@ body.dark {
   .thumbnail {
     h3 {
       color: $dark-light-font-color;
+      margin-bottom: 0.4rem;
+    }
+    h4 {
+      color: $dark-middle-font-color;
+      margin-top: 0rem;
     }
     p {
       color: $dark-middle-font-color;

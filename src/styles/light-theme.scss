@@ -46,6 +46,11 @@ body.light {
   .thumbnail {
     h3 {
       color: $dark-gray;
+      margin-bottom: 0.4rem;
+    }
+    h4 {
+      color: $middle-gray;
+      margin-top: 0rem;
     }
     p {
       color: $middle-gray;
